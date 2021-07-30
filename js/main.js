@@ -18,7 +18,6 @@ new Swiper('.services-swiper', {
     },
     slidesPerView: 'auto',
     grabCursor: true,
-    loop: true,
 });
 
 new Swiper('.portfolio-swiper__navbar', {
@@ -49,5 +48,15 @@ new Swiper('.portfolio-swiper--mobail', {
     grabCursor: true,
     spaceBetween: 20,
     autoHeight:false,
+});
+
+new Swiper('.reviews-swiper', {
+    pagination:{
+        el: '.swiper-pagination',
+        type: 'progressbar',
+    },
+    slidesPerView: 'auto',
+    grabCursor: true,
+    spaceBetween: 30,
 });
 // 

@@ -1160,6 +1160,13 @@ header .header-social .header-social__content:hover {
 }
 @media screen and (max-width: 576px) {
   .portfolio .portfolio-swiper__navbar .swiper-wrapper .swiper-slide {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .portfolio .portfolio-swiper__navbar .swiper-wrapper .swiper-slide {
     max-width: 200px;
   }
 }
@@ -1286,6 +1293,75 @@ header .header-social .header-social__content:hover {
 }
 .portfolio .swiper-wrapper {
   padding-bottom: 2rem;
+}
+
+.reviews {
+  background-color: #fff;
+  position: relative;
+  padding-top: 100px;
+}
+.reviews .services-reviews__container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #F9F5F1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.reviews .services-reviews__container h2 {
+  background-color: #fff;
+  padding: 1.1rem 8.5rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+.reviews .reviews-heading .reviews-heading__container {
+  justify-content: center;
+  display: flex;
+}
+.reviews .reviews-heading .reviews-heading__container a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  padding: 0 3rem 2rem;
+  color: #000000;
+}
+.reviews .reviews-heading .reviews-heading__container a.active {
+  color: #924851;
+}
+.reviews .reviews-swiper .swiper-wrapper {
+  padding-bottom: 2rem;
+}
+.reviews .reviews-swiper .swiper-wrapper .swiper-slide {
+  height: 600px;
+  width: 350px;
+}
+.reviews .reviews-swiper .swiper-pagination-progressbar {
+  background-color: #CDCDCD;
+}
+.reviews .reviews-swiper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #696969;
+}
+.reviews .swiper-container-horizontal > .swiper-pagination-progressbar, .reviews .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 98%;
+  height: 2px;
+  left: 15px;
+  top: unset;
+  bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .reviews .swiper-container-horizontal > .swiper-pagination-progressbar, .reviews .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    height: 4px;
+  }
 }
 
 h2 {
