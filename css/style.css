@@ -1398,6 +1398,7 @@ header .header-social .header-social__content:hover {
 }
 .formApp .formApp-container {
   display: flex;
+  margin: 0 auto;
 }
 .formApp .formApp-container .formApp-content {
   background-color: #F9F5F1;
