@@ -8,7 +8,12 @@
 @import 'services';
 @import 'portfolio';
 @import 'reviews';
+@import 'formApp';
+@import 'footer';
 
+html {
+    scroll-behavior: smooth;
+}
 
 h2 {
     font-family: Prata;
@@ -21,6 +26,9 @@ h2 {
             font-size: 1.5rem;
             line-height: 33px;
         }
+    &.primory{
+        color: #924851;
+    }
 }
 
 h3 {

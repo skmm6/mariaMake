@@ -1338,12 +1338,30 @@ header .header-social .header-social__content:hover {
 .reviews .reviews-heading .reviews-heading__container a.active {
   color: #924851;
 }
+.reviews .reviews-swiper {
+  border-top: 2px solid #F9F5F1;
+  padding-top: 3rem;
+}
 .reviews .reviews-swiper .swiper-wrapper {
   padding-bottom: 2rem;
 }
 .reviews .reviews-swiper .swiper-wrapper .swiper-slide {
   height: 600px;
   width: 350px;
+}
+.reviews .reviews-swiper .swiper-wrapper .swiper-slide img {
+  height: 600px;
+  width: 350px;
+}
+@media screen and (max-width: 576px) {
+  .reviews .reviews-swiper .swiper-wrapper .swiper-slide {
+    height: 395px;
+    width: 230px;
+  }
+  .reviews .reviews-swiper .swiper-wrapper .swiper-slide img {
+    height: 395px;
+    width: 230px;
+  }
 }
 .reviews .reviews-swiper .swiper-pagination-progressbar {
   background-color: #CDCDCD;
@@ -1363,6 +1381,313 @@ header .header-social .header-social__content:hover {
     height: 4px;
   }
 }
+@media screen and (max-width: 576px) {
+  .reviews {
+    margin-top: 5rem;
+  }
+  .reviews .reviews-heading .reviews-heading__container a {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 1.5rem;
+  }
+}
+
+.formApp {
+  padding: 78px 33px 21px;
+  display: flex;
+}
+.formApp .formApp-container {
+  display: flex;
+}
+.formApp .formApp-container .formApp-content {
+  background-color: #F9F5F1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 675px;
+  height: 600px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.formApp .formApp-container .formApp-content h2 {
+  margin-bottom: 45px;
+}
+.formApp .formApp-container .formApp-content .formApp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+.formApp .formApp-container .formApp-content .formApp-form input {
+  width: 350px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 15px 0;
+  color: #787878;
+}
+.formApp .formApp-container .formApp-content .formApp-form input ::placeholder {
+  color: #787878;
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form input ::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form input {
+    width: 347px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.formApp .formApp-container .formApp-content .formApp-form .select {
+  position: relative;
+}
+.formApp .formApp-container .formApp-content .formApp-form .select.is-active .select__body {
+  display: block;
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__header {
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  width: 350px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  padding: 15px 0;
+  color: #787878;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form .select__header {
+    width: 347px;
+    height: 40px;
+  }
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__current {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form .select__current {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: -5rem;
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__icon i {
+  font-size: 0.7rem;
+  color: #C4C4C4;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form .select__icon {
+    left: -3rem;
+  }
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__body {
+  background-color: #fff;
+  border-top: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__item {
+  cursor: pointer;
+  font-size: 18px;
+  width: 350px;
+  padding: 15px 0;
+  color: #787878;
+  line-height: 21px;
+  font-weight: normal;
+  padding: 8px;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form .select__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.formApp .formApp-container .formApp-content .formApp-form .select__item:hover {
+  background-color: #f2f2f2;
+}
+.formApp .formApp-container .formApp-content .formApp-form button {
+  margin-top: 20px;
+  border: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  width: 200px;
+  height: 55px;
+  background: #FFFFFF;
+  color: #000000;
+}
+.formApp .formApp-container .formApp-content .formApp-form button:focus {
+  border: none;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content .formApp-form button {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-content {
+    width: 411px;
+    height: 580px;
+    margin: 0;
+  }
+}
+.formApp .formApp-container .formApp-photo {
+  margin-left: 15px;
+  background-image: url(../img/formApp/Rectangle_71.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-grow: 1;
+  width: 675px;
+  height: 600px;
+}
+@media screen and (max-width: 576px) {
+  .formApp .formApp-container .formApp-photo {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formApp {
+    padding: 0;
+    padding-top: 43px;
+  }
+}
+
+footer {
+  background-color: #DCBFA5;
+  padding-top: 50px;
+}
+footer .container .footer-logo {
+  background-image: url(../img/footer/logo_1.png);
+  width: 243px;
+  height: 103px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+}
+footer .container .footer-menu {
+  display: flex;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1.7px solid rgba(255, 255, 255, 0.2);
+}
+footer .container .footer-menu div a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1, 125rem;
+  line-height: 26px;
+  font-feature-settings: "liga" off;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 17px;
+}
+@media screen and (max-width: 576px) {
+  footer .container .footer-menu div a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .container .footer-menu {
+    flex-direction: column;
+    border-bottom: none;
+  }
+}
+footer .container .footer-cop__box {
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .footer-cop__box .footer-copyright {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #FFFFFF;
+}
+footer .container .footer-cop__box .footer-social {
+  display: flex;
+  column-gap: 17px;
+  margin-bottom: 2rem;
+}
+footer .container .footer-cop__box .footer-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+}
+footer .container .footer-cop__box .footer-social a i {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+  footer .container .footer-cop__box .footer-social a {
+    min-width: 80px;
+    height: 80px;
+  }
+  footer .container .footer-cop__box .footer-social a i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .container .footer-cop__box .footer-social {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .container .footer-cop__box {
+    flex-direction: column-reverse;
+    justify-content: stretch;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 h2 {
   font-family: Prata;
@@ -1377,6 +1702,9 @@ h2 {
     font-size: 1.5rem;
     line-height: 33px;
   }
+}
+h2.primory {
+  color: #924851;
 }
 
 h3 {
